@@ -153,6 +153,7 @@
 
 </main>
 
+<div id="footer"></div> 
 
   <script>
     fetch("navbar.html")
@@ -160,11 +161,12 @@
       .then(d => document.getElementById("navbar").innerHTML = d);
   </script>
 
-  <script>
-    fetch("footer.html")
-      .then(r => r.text())
-      .then(d => document.getElementById("footer").innerHTML = d);
-  </script>
+ <script>
+fetch("footer.html")
+  .then(r => r.text())
+  .then(d => document.getElementById("footer").innerHTML = d);
+</script>
+
 
 </body>
 </html>
